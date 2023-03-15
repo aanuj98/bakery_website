@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+	@font-face{
+	font-family: Quicksand;
+	src: url('Quicksand-Regular.woff') format('woff'),
+		 url('Quicksand-Regular.ttf') format('truetype');
+	}
+	
+html{
+	
+	background-color: hsl(200, 72%, 72%);
+	padding: 20px;
+	margin: 2px;
+	overflow-x: scroll;
+}
+
+/* for the header*/
+header{
+	text-align:center;
+	font-size:1.7em;
+	padding-bottom: 20px;
+}
+
+/* for the body */
+body{
+	color: rgb(50,50,90);
+	background-color:AliceBlue;
+	font-family: Times New Roman, Geneva, sans-serif;
+	overflow: auto;
+	padding: 10px;
+}
+
+article#education h1{
+	color: black;
+	background-color: rgb(130,150,180);
+}
+/* for the heading*/
+h1{
+	font-size: 1.3em;
+}
+/* to underline the heading*/
+h1{
+	  text-decoration: underline;
+
+}
+
+
+.container{
+	
+	margin: 15px auto;
+	padding-bottom: 40px;
+	padding-top: 20px;
+	width: 80%
+}
+
+
+/* for the image*/
+img{
+	border-radius: 50%;
+	float: left;
+	width: 175px;
+	
+}
+.text{
+	text-align: center;
+	
+}
+/* for the footer*/
+
+/* to change the list style*/
+
+ul{
+	list-style-type: square;
+}
+.footer{
+	text-align: center;
+	font-family: Geneva, sans-serif;
+	padding: 4px;
+	background-image: url("background3.jpg");
+	background-size: cover;
+	color: snow;
+	font-size: 1.6em;
+}
+
+
+
+
+	
+
+

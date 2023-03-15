@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+<head>
+		<meta charset="utf-8" />
+		<title>Order Here</title>
+
+		<!--- Link the css and java file-->
+		<link href="personal_project.css" rel="stylesheet" />
+		<script src="JavaFile.js"></script>
+</head>
+<body>
+	<header>
+	<!-- Navigation for the website -->
+	 <div class="sidenav">
+        <a href="personal_project.html">Home</a>
+            <a href="order_here.html">Order Here</a>
+            <a href="reviews.html">Reviews</a>  
+			<!-- https://pixabay.com/photos/abundance-baked-bakery-bread-1868573/ 
+			<img src ="bakery.jpg" alt="image" style="width:200px;height:150px;" /> -->
+         
+      </div>
+	 <div class="header1">
+		<p>Place Your Orders Here</p>
+	</div>
+
+	</header>
+
+	<!--- Form for thr user to submit their data and label for pick up and delivery-->
+	<div class="main">
+	      <form class="survey" action="http://www.example.com/redball/survey" method="post">
+         <fieldset class="custInfo">
+            <legend><b>Customer Information</b></legend>
+
+            <div class="formRow">
+               <label for="name">Name</label>
+               <input type="text" name="custName" id="name" placeholder="First and last name">
+            </div>
+
+            <div class="formRow">
+               <label for="street">Street Address</label>
+               <input type="text" name="custStreet" id="street">
+            </div>
+
+            <div class="formRow">
+               <label for="city">City</label>
+               <input type="text" name="custCity" id="city" value="Alexandria">
+            </div>
+
+            <div class="formRow">
+               <label for="state">State</label>
+               <input type="text" name="custState" id="state" value="VA" maxlength="2">
+            </div>
+
+            <div class="formRow">
+               <label for="zip">Postal Code</label>
+               <input type="text" name="custZip" id="zip" pattern="^\d{5}(-\d{4})?$">
+            </div>
+
+            <div class="formRow">
+               <label for="phone">Phone Number</label>
+               <input type="tel" name="custPhone" id="phone" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+            </div>
+
+            <div class="formRow">
+               <label for="mail">E-mail</label>
+               <input type="email" name="custEmail" id="mail">
+            </div>
+			
+			<!--- Button and drop down to choose pick up or delivery -->
+			<div>
+			<label for="order">Choose Pick-up or Delivery</label>
+				<form action="borjabakery@mail.com" method="POST">
+					<select name="Order" class="food">
+					  <option value="Pick-up">Pick-up</option>
+					  <option value="Delivery">Delivery</option>
+
+					</select>
+				</form>
+			</div>
+			<div>
+				<p></p>
+			</div>
+			 <label for="box">Please let us know your order and special requests here!</label>
+			<textarea></textarea>
+			
+			<!-- submit button -->
+			<input type="submit" value="Submit" onclick="alert('Your order was received! Thank You!')">
+	
+					
+				</fieldset>
+		</div>
+		
+
+
+
+</body>
+
+<footer>
+</footer>
+</html>
